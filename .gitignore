@@ -1,0 +1,8 @@
+*
+!.gitignore
+!sxhkd
+!bspwm
+!polybar
+!sxhkd/*
+!bspwm/*
+!polybar/*
