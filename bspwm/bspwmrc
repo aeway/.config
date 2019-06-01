@@ -21,10 +21,16 @@ bspc config initial_polarity second_child
 # focus the window on mouse over it
 bspc config focus_follows_pointer true
 
+# set background
+#feh --bg-fill /home/artyom/.config/bspwm/CellPath_lede_fullwidth-2880x1620.jpg
+feh --bg-fill /home/artyom/.config/bspwm/death-val1.jpg
+
 # rules
-bspc rule -a TelegramDesktop desktop=^3 state=floating
 bspc rule -a Firefox desktop=^1 state=tiled
 bspc rule -a Emacs state=tiled
-
-# set background
-feh --bg-fill /home/artyom/.config/bspwm/CellPath_lede_fullwidth-2880x1620.jpg
+bspc rule -a URxvt:musicpad sticky=on state=floating rectangle=900x400+350+250
+bspc rule -a qjackctl state=floating
+bspc rule -a Seq64 state=floating rectangle=780x412+407+241
+bspc rule -a "VMPK-Virtual MIDI Piano Keyboard" state="floating" rectangle=831x378+353+246
+bspc rule -a "Hydrogen" state="floating" rectangle=829x284+360+439
+bspc rule -a "TelegramDesktop" state="pseudo_tiled"
